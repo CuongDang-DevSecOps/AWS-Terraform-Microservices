@@ -1,0 +1,13 @@
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: File Storage Service
+
+# AWS Services
+aws-services:
+  s3:
+    access-key: ${ACCESS_KEY:asked}
+    secret-key: ${SECRET_KEY:asked}
+    region: eu-west-1
+    bucket-name: ${BUCKET_NAME:asked}
