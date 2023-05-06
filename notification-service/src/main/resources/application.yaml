@@ -1,0 +1,12 @@
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: Notification Service
+
+# AWS Services
+aws-services:
+  ses:
+    access-key: ${ACCESS_KEY:asked}
+    secret-key: ${SECRET_KEY:asked}
+    region: eu-west-1
