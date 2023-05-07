@@ -1,0 +1,8 @@
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: Appointment Job Service
+
+appointment-scheduling-service:
+  base-url: ${APPOINTMENT_SCHEDULING_SERVICE:asked}
