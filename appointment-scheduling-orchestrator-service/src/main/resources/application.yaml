@@ -1,0 +1,22 @@
+spring:
+  main:
+    banner-mode: off
+
+  application:
+    name: Appointment Scheduling Orchestrator Service
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+  # docker run --name postgres-locally -d -p 5432:5432 -e POSTGRES_PASSWORD=password postgres
+  datasource:
+    url: jdbc:postgresql://localhost:5432/appointment-orchestrator?currentSchema=orchestrator
+    username: postgres
+    password: password
+
+  flyway:
+    url: jdbc:postgresql://localhost:5432/appointment-orchestrator?currentSchema=orchestrator
+    user: postgres
+    password: password
